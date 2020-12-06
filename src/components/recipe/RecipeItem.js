@@ -2,7 +2,7 @@ import React from "react";
 import IngredientList from "./IngredientList";
 import PropTypes from "prop-types";
 
-function RecipeItem({title, thumbnail, ingredients}) {
+function RecipeItem({ title, thumbnail, ingredients }) {
   return (
     <div className="card">
       <img className="card--image" src={thumbnail} alt="Description" />
@@ -15,8 +15,8 @@ function RecipeItem({title, thumbnail, ingredients}) {
 }
 
 RecipeItem.propTypes = {
-	title: PropTypes.string.isRequired,
-  thumbnail: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  thumbnail: PropTypes.string.isRequired,
 };
 
 export default RecipeItem;

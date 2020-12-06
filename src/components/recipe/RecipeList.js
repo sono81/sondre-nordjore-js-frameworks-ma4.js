@@ -15,7 +15,7 @@ function RecipeList() {
         setFilteredRecipes(json.results);
       })
       .catch((err) => console.log(err));
-  },[]);
+  }, []);
 
   const filterRecipes = function (event) {
     const lowercaseSearch = event.target.value.toLowerCase();
@@ -39,7 +39,12 @@ function RecipeList() {
 
         return (
           <React.Fragment key={i}>
-            <RecipeItem title={title} thumbnail={thumbnail} ingredients={ingredients} key={i} />
+            <RecipeItem
+              title={title}
+              thumbnail={thumbnail}
+              ingredients={ingredients}
+              key={i}
+            />
           </React.Fragment>
         );
       })}
