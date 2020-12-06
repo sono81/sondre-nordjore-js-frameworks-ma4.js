@@ -1,0 +1,12 @@
+.search {
+    margin-bottom: 40px;
+
+    &--bar {
+        width: 370px;
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: $white;
+        color: $grey;
+        border-radius: 10px;
+    }
+}
